@@ -1,0 +1,122 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #e5ddd5 url(../img/bg.png) repeat top left;
+}
+
+section {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 60px;
+}
+
+header {
+	background: #e93750;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#login {
+	display: block;
+}
+
+#addItems {
+	display: none;
+}
+
+#showItems {
+	display: none;
+}
+
+#login .loginform {
+	width: 50%;
+	height: auto;
+	position: relative;
+	top: 20px;
+	margin: 0px auto;
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.loginform input {
+	width: calc(100% - 20px);
+	height: 25px;
+	padding: 10px;
+	display: block;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	margin: 5px auto;
+}
+
+#addItems .itemform {
+	width: 50%;
+	height: auto;
+	position: relative;
+	top: 20px;
+	margin: 0px auto;
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.itemform input {
+	width: calc(100% - 20px);
+	height: 25px;
+	padding: 10px;
+	display: block;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	margin: 5px auto;
+}
+
+#showItems .itemlist {
+	width: 50%;
+	height: auto;
+	position: relative;
+	top: 20px;
+	margin: 0px auto;
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 10px;
+	list-style: none;
+}
+
+.itemlist .itemcard {
+	width: calc(100% - 20px);
+	height: auto;
+	max-height: 160px;
+	padding: 10px;
+	display: block;
+	border-radius: 0;
+	border: 1px solid #ddd;
+	margin: 5px auto;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.itemcard .imgcont {
+	width: 100px;
+	float: left;
+	display: inline-block;
+}
+
+.itemcard .idetail {
+	width: calc(100% - 130px);
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.itemcard .imgcont img {
+	width: 100px;
+	height: auto;
+}
+
+

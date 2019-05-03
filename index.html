@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VanillApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		
+	</header>
+	<section id="login">
+		<form class="loginform">
+			<input type="text" placeholder="Enter Full Name" id="fname">
+			<input type="email" placeholder="Enter Email Address" id="email">
+			<input type="text" placeholder="Enter Phone" id="phone">
+			<button type="button" onclick="routing('addItems', 'show');">Signup</button>
+		</form>
+	</section>
+
+	<section id="addItems">
+		<form class="itemform">
+			<input type="text" placeholder="Item Name" id="itname">
+			<input type="text" placeholder="Item Description" id="itdesc">
+			<input type="text" placeholder="Item Price" id="itprice">
+			<input type="text" placeholder="Item Quantity" id="itqty">
+			<button type="button">Add Item</button>
+		</form>
+	</section>
+
+	<section id="showItems">
+		<ul class="itemlist">
+			<li class="itemcard">
+				<div class="imgcont">
+					<img src="img/img.png">
+				</div>
+				<div class="idetail">
+					<p class="ititle">Triple Truffle</p>
+					<p class="idesc">This is a description.</p>
+					<p class="iprice">$0.00</p>
+					<p class="iqty">In Stock</p>
+				</div>
+			</li>
+		</div>
+	</section>
+<!-- 
+	<section id="checkout">
+	</section> -->
+	<script type="text/javascript">
+		function routing(section, viz)
+		{
+			var sections = ["login", "addItems", "showItems"];
+			for (var i=0; i < sections.length; i++)
+			{
+				if(sections[i] == section)
+				{
+					if(viz == "show")
+					{
+						document.getElementById(section).style.display = "block";
+					} else {
+						document.getElementById(section).style.display = "none";
+					}
+				} else {
+					document.getElementById(sections[i]).style.display = "none";
+				}
+			}
+		}
+	</script>
+</body>
+</html>
